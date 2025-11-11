@@ -4,5 +4,6 @@ def Operations(x: int|float, y: int|float) -> int|float:
 
 x = input("Insert first number: ")
 y = input("Insert second number: ")
+results = Operations(int(x),int(y))
 for z in range(4):
-    print(Operations(int(x),int(y))[z])
+    print(results[z])
