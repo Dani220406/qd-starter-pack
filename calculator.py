@@ -1,9 +1,23 @@
 #Small Calculator Programm
-def Operations(x: int|float, y: int|float) -> int|float:
-    return x+y, x-y, x*y, x/y
+def somma(x: int|float, y: int|float) -> int|float:
+    return x+y
 
-x = input("Insert first number: ")
-y = input("Insert second number: ")
-results = Operations(int(x),int(y))
-for z in range(4):
-    print(results[z])
+def differenza(x: int|float, y: int|float) -> int|float:
+    return x-y
+
+def prodotto(x: int|float, y: int|float) -> int|float:
+    return x*y
+
+def divisione(x: int|float, y: int|float) -> int|float:
+    return x/y
+
+def main():
+    x = (int or float)(input("Insert first number: "))
+    y = (int or float)(input("Insert second number: "))
+    print("\nSomma:",x,"+",y,"=",somma(x,y))
+    print("Differenza:",x,"-",y,"=",differenza(x,y))
+    print("Prodotto:",x,"x",y,"=",prodotto(x,y))
+    print("Divisione:",x,"/",y,"=",divisione(x,y))
+
+if __name__ == "__main__":
+    main()
